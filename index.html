@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Blog preview card</title>
+    <style>
+      @font-face {
+        font-family: "Figtree";
+        src: url("assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+        font-weight: 100 900; /* Range of weights available in the variable font */
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'Figtree Semibold';
+        src: url('assets/fonts/static/Figtree-SemiBold.ttf') format('truetype');
+        font-weight: 600; /* Semibold weight */
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'Figtree Extrabold';
+        src: url('assets/fonts/static/Figtree-ExtraBold.ttf') format('truetype');
+        font-weight: 800; /* Extrabold weight */
+        font-style: normal;
+      }
+
+
+      html,
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: hsl(47, 88%, 63%);
+      }
+
+      .card {
+        background-color: hsl(0, 0%, 100%);
+        border-color: hsl(0, 0%, 7%);
+        max-width: 380px;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 20px;
+        box-shadow: 8px 8px 0 hsl(0, 0%, 7%);
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        line-height: 150%;
+        overflow: hidden;
+        transition: box-shadow 0.3s ease;
+      }
+
+      .card:hover{
+        box-shadow: 16px 16px 0 hsl(0, 0%, 7%);
+      }
+
+      .illustration img {
+        display: block;
+        border-radius: 10px;
+        margin-top: 24px;
+        margin-left: 24px;
+        margin-right: 24px;
+      }
+
+      .card-content {
+        display: flex;
+        padding: 24px;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .category-tag span {
+        font-family: 'Figtree Extrabold', sans-serif;
+        background-color: hsl(47, 88%, 63%);
+        max-width: fit-content;
+        font-size: 14px;
+        padding-top: 7px;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-bottom: 7px;
+        border-radius: 4px;
+      }
+
+      .published-date span {
+        font-family: 'Figtree Semibold', sans-serif;
+        font-size: 14px;
+      }
+
+      .card-header span {
+        font-family: 'Figtree Extrabold', sans-serif;
+        font-size: 24px;
+        transition: color 0.15s ease;
+      }
+
+      .card-header:hover {
+        color: hsl(47, 88%, 63%);
+        cursor:pointer;
+      }
+
+      .card-body {
+        font-family: 'Figtree', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color: hsl(0, 0%, 50%);
+      }
+
+      .author {
+        font-family: 'Figtree Extrabold', sans-serif;
+        display:flex;
+        align-items: center;
+        font-size: 14px;
+        padding-left: 24px;
+        padding-bottom: 24px;
+      }
+
+      .author img {
+        max-width: 32px;
+        max-height: 32px;
+        padding-right: 12px;
+      }
+
+      footer {
+        position: absolute;
+        bottom: 0;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <div class="illustration">
+          <img
+            src="assets/images/illustration-article.svg"
+            alt="html-illustration"
+          />
+        </div>
+
+        <div class="card-content">
+          <div class="category-tag"><span>Learning</span></div>
+          <div class="published-date"><span>Published 21 Dec 2023</span></div>
+          <div class="card-header"><span>HTML & CSS foundations</span></div>
+          <div class="card-body">
+            <span>
+              These languages are the backbone of every website, defining
+              structure, content, and presentation.
+            </span>
+          </div>
+        </div>
+        <div class="author">
+          <img src="assets/images/image-avatar.webp" alt="author-image" />
+          <span>Greg Hooper</span>
+        </div>
+      </div>
+    </main>
+    <footer>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Aiswariya S</a>.
+    </footer>
+    </div>
+  </body>
+</html>
