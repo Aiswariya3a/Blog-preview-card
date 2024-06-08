@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Blog-Preview-Card](https://blog-preview-card-fm-2.netlify.app)
 
 ## My process
 
